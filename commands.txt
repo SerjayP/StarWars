@@ -1,0 +1,56 @@
+Terminal Lab
+
+Part 1:
+
+1. mkdir death_star
+    touch darth_vader.txt princess_leia.txt storm_trooper.txt
+
+2. cd .. 
+    mkdir tatooine && cd tatooine
+        touch luke.txt ben_kenobi.txt
+3. 
+    mkdir millenium_falcon
+        cd millenium_falcon && touch han_solo.txt chewbaca.txt
+
+Part 2: 
+
+ 4. 
+    cd ..
+    mv ben_kenobi.txt obi_wan.txt
+
+Part 3: 
+ 5.   cd ..
+        cd death_star
+            cp storm_trooper.txt ../tatooine
+
+Part 4:
+ 6.  cd tatooine
+        mv luke.txt millenium_falcon && mv obi_wan.txt millenium_falcon
+ 7.  mv millenium_falcon ..
+ 8.  mv millenium_falcon death_star
+ 9.  mv princess_leia.txt millenium_falcon
+
+Part 5: 
+ 0.  cd millenium_falcon && rm obi_wan.txt
+
+Part 6:
+ 1.  cd ../.. && mkdir yavin_4
+ 2.  cd death_star && mv millenium_falcon yavin_4
+ 3.  cd .. 
+        cd yavin_4 && mkdir x_wing
+ 4.  cd millenium_falcon 
+         mv princess_leia.txt ../../yavin_4 && mv luke.txt ../../yavin_4/x_wing
+ 5. mv x_wing .. && mv millenium_falcon ..
+ 6. cd death_star && mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+ 7. mv darth_vader.txt tie_fighter_1
+ 8. cp storm_trooper.txt tie_fighter_2 && cp storm_trooper.txt tie_fighter_3
+ 9. mv tie_fighter* ..
+
+Part 7:
+ 20. rm -r tie_fighter_2 tie_fighter_3
+
+Part 8:
+ 21. cd x_wing && touch the_force.txt
+ 22. cd ..
+        rm -r death_star
+ 23. mv x_wing yavin_4 && mv millenium_falcon yavin_4
